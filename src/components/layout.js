@@ -6,10 +6,12 @@
  */
 
 import React from "react"
+import Helmet from 'react-helmet'
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
+import Sidebar from "./sidebar"
 import "./layout.css"
 
 const Layout = ({ children }) => {
@@ -38,6 +40,7 @@ const Layout = ({ children }) => {
           © {new Date().getFullYear()}, Built with
           {` `}
           <a href="https://www.gatsbyjs.org">Gatsby</a>
+          <p>willpower!</p>
         </footer>
       </div>
     </>
